@@ -1,0 +1,8 @@
+input AMPLIFY {
+    globalAuthRule: AuthRule = { allow: public }
+} # FOR TESTING ONLY!
+type Product @model {
+    id: ID!
+    name: String!
+    price: Int
+}

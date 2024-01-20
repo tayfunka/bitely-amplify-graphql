@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bitelyamplify-dev-162934-authRole",
+      "UnauthRoleArn": "arn:aws:iam::318137427970:role/amplify-bitelyamplify-dev-162934-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::318137427970:role/amplify-bitelyamplify-dev-162934-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-bitelyamplify-dev-162934-deployment",
+      "UnauthRoleName": "amplify-bitelyamplify-dev-162934-unauthRole",
+      "StackName": "amplify-bitelyamplify-dev-162934",
+      "StackId": "arn:aws:cloudformation:eu-north-1:318137427970:stack/amplify-bitelyamplify-dev-162934/f4e4e3d0-b797-11ee-8a98-0efbba8db476",
+      "AmplifyAppId": "d34fuuu8k5zn4f"
+    },
+    "categories": {
+      "api": {
+        "bitelyamplify": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d34fuuu8k5zn4f",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
