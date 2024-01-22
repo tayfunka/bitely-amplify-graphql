@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "c1ebf054-0f3b-4577-8379-a3c1bbd2ec6d",
+		"name": "bitely-amplify-graphql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28281179"
+	},
+	"item": [
+		{
+			"name": "List Products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": \"query ListProducts { listProducts { items { id name price } } }\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sksbkyugqffgjgmvqraqz3bjpq.appsync-api.eu-north-1.amazonaws.com/graphql?x-api-key=da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+					"protocol": "https",
+					"host": [
+						"sksbkyugqffgjgmvqraqz3bjpq",
+						"appsync-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"graphql"
+					],
+					"query": [
+						{
+							"key": "x-api-key",
+							"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": \"query GetProduct($id: ID!) { getProduct(id: $id) { id name price } }\",\n  \"variables\": {\n    \"id\": \"227348fb-5c0f-40c1-aa2d-93fcd7014a39\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sksbkyugqffgjgmvqraqz3bjpq.appsync-api.eu-north-1.amazonaws.com/graphql",
+					"protocol": "https",
+					"host": [
+						"sksbkyugqffgjgmvqraqz3bjpq",
+						"appsync-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": \"mutation UpdateProduct($input: UpdateProductInput!, $condition: ModelProductConditionInput) { updateProduct(input: $input, condition: $condition) { id name price createdAt updatedAt __typename } }\",\n  \"variables\": {\n    \"input\": {\n      \"id\": \"5fa9c36e-86c9-4c8c-b13f-6c04cae3eb55\",\n      \"name\": \"product 1_updated\",\n      \"price\": 50\n    },\n    \"condition\": null\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sksbkyugqffgjgmvqraqz3bjpq.appsync-api.eu-north-1.amazonaws.com/graphql?x-api-key=da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+					"protocol": "https",
+					"host": [
+						"sksbkyugqffgjgmvqraqz3bjpq",
+						"appsync-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"graphql"
+					],
+					"query": [
+						{
+							"key": "x-api-key",
+							"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": \"mutation DeleteProduct($input: DeleteProductInput!) { deleteProduct(input: $input) { id name price createdAt updatedAt __typename } }\",\n  \"variables\": {\n    \"input\": {\n      \"id\": \"5fa9c36e-86c9-4c8c-b13f-6c04cae3eb55\"\n    }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sksbkyugqffgjgmvqraqz3bjpq.appsync-api.eu-north-1.amazonaws.com/graphql?x-api-key=da2-7b3yl4uf4vhdxgfjwlqeer4ina",
+					"protocol": "https",
+					"host": [
+						"sksbkyugqffgjgmvqraqz3bjpq",
+						"appsync-api",
+						"eu-north-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"graphql"
+					],
+					"query": [
+						{
+							"key": "x-api-key",
+							"value": "da2-7b3yl4uf4vhdxgfjwlqeer4ina"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
