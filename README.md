@@ -1,3 +1,4 @@
 # Bitely + Amplify (graphql)
 
-Use # bitely-amplify-graphql.postman_collection.json
+Postman collection:
+bitely-amplify-graphql.postman_collection.json
